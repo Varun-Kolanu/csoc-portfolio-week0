@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
     <title>Portfolio - About Me</title>
 </head>
+
 <body>
-    
+    <div class="flex flex-col justify-between w-[100vw] h-[100vh] bg-gradient-radial from-[#37b9f3] to-[#0088ff]">
+        <nav class="flex w-[100vw] justify-center">
+            <ul class="flex justify-evenly w-[40rem] absolute font-mono top-4 text-white text-xl">
+                <a href="./AboutMe.html">
+                    <li class="text-red-300 underline underline-offset-4 font-bold">About Me</li>
+                </a>
+                <a href="./Skills.html">
+                    <li
+                        class="hover:underline hover:underline-offset-4 hover:text-orange-300 cursor-pointer transition-all duration-500">
+                        Skills</li>
+                </a>
+                <a href="">
+                    <li
+                        class="hover:underline hover:underline-offset-4 hover:text-orange-300 cursor-pointer transition-all duration-500">
+                        Projects</li>
+                </a>
+            </ul>
+        </nav>
+
+        <div class="aboutBox relative w-[900px] h-[550px] mx-auto bottom-9 drop-shadow-2xl">
+            <h1 class="text-5xl font-mono text-[#f6ba74] mb-8 ml-8">About Me</h1>
+            <div id="introBox" class="flex">
+                <div id="intro" class="w-[500px] mx-9">
+                    <p class="text-white">Hello, I'm <span class="font-bold text-[#ffbaa8]"> Varun Kolanu </span>, born
+                        in
+                        Hyderabad, a first-year student pursuing Computer Science and Engineering at IIT (BHU) Varanasi.
+                    </p> <br>
+                    <p class="text-white">I have always been fascinated by the world of technology and its endless
+                        possibilities. With a solid foundation in both <span class="font-bold text-[#ffbaa8]"> front-end
+                        </span> and <span class="font-bold text-[#ffbaa8]"> back-end </span> development, I possess a
+                        versatile skill set that allows me to bring ideas to life across the full stack.</p> <br>
+                    <p class="text-white">Beyond code, I find immense joy in <span class="font-bold text-[#ffbaa8]">
+                            animation </span> and <span class="font-bold text-[#ffbaa8]"> sketching </span>. <span
+                            class="font-bold text-[#ffbaa8]"> Spirituality </span> holds a special place in my life, guiding my journey
+                        with a sense of purpose and inner peace. Hobbies include playing <span class="font-bold text-[#ffbaa8]"> Chess </span>.</p> <br>
+                    <p class="text-white">If you resonate with similar interests or have exciting opportunities for
+                        collaboration, I would be thrilled to connect with you 😀</p>
+                </div>
+                <img id="myImg" src="../src/Images/myImg.png" class="w-80 h-80 rounded-full drop-shadow-2xl hover:scale-110 transition-all duration-700"></>
+            </div>
+        </div>
+        </>
 </body>
+
 </html>
