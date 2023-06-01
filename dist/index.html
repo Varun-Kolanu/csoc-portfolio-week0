@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,31 @@
     <link rel="stylesheet" href="output.css">
     <title>Document</title>
 </head>
+
 <body>
-    <p class="text-red-600">hello</p>
+    <div class="flex justify-center items-center w-[100vw] h-[100vh] bg-gradient-radial from-[#0184ff] to-[#00417d] text-white font-mono">
+        <img src="../src/Images/spotlightleft.png" alt="spotlight" class="absolute top-4 left-[265px] h-[52vh] opacity-30 z-10">
+        <img src="../src/Images/spotleft.png" alt="spotlight" class="absolute -top-1 left-64 h-[10vh]">
+        <img src="../src/Images/spotlightright.png" alt="spotlight" class="absolute top-4 right-[280px] h-[52vh] opacity-30">
+        <img src="../src/Images/spotright.png" alt="spotlight" class="absolute -top-1 right-[17rem] h-[10vh]">
+        <img src="https://cdni.iconscout.com/illustration/premium/thumb/web-development-programming-4315061-3610795.png" alt="web Dev" class="absolute top-[20vh] h-[15rem] right-20 opacity-50">
+        
+        <div id="intro" class="flex flex-col items-center ">
+            <p class="text-[1.5rem]">Hi there! 👋</p>
+            <p class="text-[3.5rem]">Myself <span class="text-[#fb923c] font-bold"> Varun </span></p>
+            <p class="text-[15px]">I'm a Deve-love-per, transforming ideas into high-quality and functional Web Projects </p><p> on time and in
+            budget</p>
+            <div id="buttons" class="flex w-full justify-center items-center relative top-5">
+                <a href="#" class="mr-10">
+                    <button class="btnPrimary rounded-3xl bg-orange-400 hover:bg-orange-500 hover:shadow-lg  hover:shadow-red-600 shadow-orange-600 transition-all duration-500 shadow-lg py-2 px-4 active:shadow-none active:translate-y-4">View Portolio</button>
+                </a>
+                <a href="../src/VarunKolanu_CV.pdf" class="ml-10" download="VarunKolanu_CV">
+                    <button class="btnSec rounded-3xl bg-transparent border-2 border-white py-2 px-4 hover:bg-[#0165c2] hover:border-transparent transition-all duration-500">Download CV</button>
+                </a>
+            </div>
+            
+        </div>
+    </>
 </body>
+
 </html>
