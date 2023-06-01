@@ -893,18 +893,6 @@ video {
   transition-duration: 700ms;
 }
 
-.duration-\[\] {
-  transition-duration: ;
-}
-
-.duration-\[2s\] {
-  transition-duration: 2s;
-}
-
-.duration-\[1\.5s\] {
-  transition-duration: 1.5s;
-}
-
 .rotate-y-30 {
   transform: rotateY(30deg);
 }
