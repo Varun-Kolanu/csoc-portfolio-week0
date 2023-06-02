@@ -19,11 +19,11 @@ const rotateX = plugin(function ({ addUtilities }) {
     '.rotate-y-30': {
       transform: 'rotateY(30deg)',
     },
-    '.rotate-y-15': {
-      transform: 'rotateY(15deg)',
+    '.-rotate-y-35': {
+      transform: 'rotateY(-45deg)',
     },
-    '.rotate-y-35': {
-      transform: 'rotateY(35deg)',
+    '.-rotate-y-25': {
+      transform: 'rotateY(-25deg)',
     },
   })
 })
