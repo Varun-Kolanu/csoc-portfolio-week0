@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
+.projectImg {
+    @apply w-96 h-48 absolute top-0 left-0 z-10 transition-all duration-500 rounded-xl;
+}
+
+.projectDesc {
+    @apply w-96 h-48 absolute top-0 left-0 bg-gray-300 flex items-center flex-col justify-evenly px-3 rounded-xl;
+}
+
+.projectCard {
+    @apply drop-shadow-2xl w-96 h-48 relative rounded-xl;
+}
+
+.openWeb {
+    @apply rounded-3xl bg-orange-200 border-2 border-orange-400 py-2 px-4 hover:bg-orange-400 font-mono transition-all duration-500;
+}
 @tailwind utilities;
