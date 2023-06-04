@@ -17,10 +17,12 @@
 
         .skills1 {
             perspective: 1200px;
+            -webkit-perspective: 1200px;
         }
 
         .skills2 {
             perspective: 2000px;
+            -webkit-perspective: 2000px;
         }
     </style>
 </head>
@@ -53,48 +55,52 @@
                 </a>
             </ul>
         </nav>
-        <div class="skillBox relative w-[900px] h-[550px] mx-auto bottom-9 drop-shadow-2xl">
-            <h1 class="text-5xl font-serif text-[#f6ba74] mb-8 ml-24">My Skills</h1>
-            <div>
-                <div class="skillCard drop-shadow-2xl">
-                    <div class="inner bg-gray-300 h-64 w-64 absolute top-20 left-20 rounded-xl grid grid-cols-3">
-                        <img src="../src/Icons/html.svg" alt="html"
-                            class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="HTML">
-                        <img src="../src/Icons/css.svg" alt="css"
-                            class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="CSS">
-                        <img src="../src/Icons/js.svg" alt="js"
-                            class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="JavaScript">
-                        <img src="../src/Icons/tailwind.svg" alt="tailwind"
-                            class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="Tailwind CSS">
-                        <img src="../src/Icons/sass.svg" alt="sass"
-                            class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="Sass">
-                        <img src="../src/Icons/react.svg" alt="react"
-                            class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="React Js">
-                    </div>
-                    <div class="skills1">
-                        <div
-                            class="outer w-64 h-64 absolute top-20 left-20 origin-left transition-all duration-1000 -rotate-y-25 border border-blue-600 rounded-xl flex flex-col justify-center items-center text-white text-2xl font-mono bg-[#8c2517]">
-                            <span>Frontend</span>
-                            <span>Development</span>
+        <div class="flex justify-center items-center w-[100vw] my-auto relative top-12">
+            <div class="skillBox relative w-[900px] h-[550px] drop-shadow-2xl">
+                <h1 class="text-5xl font-serif text-[#f6ba74] mb-8 ml-24">My Skills</h1>
+                <div>
+                    <div class="skillCard drop-shadow-2xl">
+                        <div class="inner bg-gray-300 h-64 w-64 absolute top-20 left-20 rounded-xl grid grid-cols-3">
+                            <img src="../src/Icons/html.svg" alt="html"
+                                class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="HTML">
+                            <img src="../src/Icons/css.svg" alt="css"
+                                class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="CSS">
+                            <img src="../src/Icons/js.svg" alt="js"
+                                class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="JavaScript">
+                            <img src="../src/Icons/tailwind.svg" alt="tailwind"
+                                class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500"
+                                title="Tailwind CSS">
+                            <img src="../src/Icons/sass.svg" alt="sass"
+                                class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="Sass">
+                            <img src="../src/Icons/react.svg" alt="react"
+                                class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="React Js">
+                        </div>
+                        <div class="skills1">
+                            <div
+                                class="outer w-64 h-64 absolute top-20 left-20 origin-left transition-all duration-1000 -rotate-y-25 border border-blue-600 rounded-xl flex flex-col justify-center items-center text-white text-2xl font-mono bg-[#8c2517]">
+                                <span>Frontend</span>
+                                <span>Development</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="skillCard drop-shadow-2xl">
-                    <div class="inner w-64 bg-gray-300 h-64 absolute top-20 left-[600px] rounded-xl grid grid-cols-2">
-                        <img src="../src/Icons/node.svg" alt="node"
-                            class="w-20 h-20 m-auto hover:scale-125 transition-all duration-500" title="Node Js">
-                        <img src="../src/Icons/express.svg" alt="express"
-                            class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="Express Js">
-                        <img src="../src/Icons/mongodb.svg" alt="mongodb"
-                            class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="Mongo DB">
-                        <img src="../src/Icons/python.svg" alt="python"
-                            class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="Python">
-                    </div>
-                    <div class="skills2">
+                    <div class="skillCard drop-shadow-2xl">
                         <div
-                            class="outer w-64 h-64 absolute top-20 left-[600px] origin-left transition-all duration-1000 -rotate-y-35 border border-blue-600 rounded-xl flex justify-center items-center flex-col text-white text-2xl font-mono bg-[#8c2517]">
-                            <span>Backend</span>
-                            <span>Development</span>
+                            class="inner w-64 bg-gray-300 h-64 absolute top-20 left-[600px] rounded-xl grid grid-cols-2">
+                            <img src="../src/Icons/node.svg" alt="node"
+                                class="w-20 h-20 m-auto hover:scale-125 transition-all duration-500" title="Node Js">
+                            <img src="../src/Icons/express.svg" alt="express"
+                                class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="Express Js">
+                            <img src="../src/Icons/mongodb.svg" alt="mongodb"
+                                class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="Mongo DB">
+                            <img src="../src/Icons/python.svg" alt="python"
+                                class="w-16 h-16 m-auto hover:scale-125 transition-all duration-500" title="Python">
+                        </div>
+                        <div class="skills2">
+                            <div
+                                class="outer w-64 h-64 absolute top-20 left-[600px] origin-left transition-all duration-1000 -rotate-y-35 border border-blue-600 rounded-xl flex justify-center items-center flex-col text-white text-2xl font-mono bg-[#8c2517]">
+                                <span>Backend</span>
+                                <span>Development</span>
+                            </div>
                         </div>
                     </div>
                 </div>
