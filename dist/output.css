@@ -692,6 +692,10 @@ video {
   right: 280px;
 }
 
+.top-12 {
+  top: 3rem;
+}
+
 .top-20 {
   top: 5rem;
 }
@@ -708,28 +712,12 @@ video {
   top: 20vh;
 }
 
-.top-\[100px\] {
-  top: 100px;
-}
-
-.top-\[20px\] {
-  top: 20px;
-}
-
-.top-\[px\] {
-  top: px;
-}
-
 .top-\[50px\] {
   top: 50px;
 }
 
-.top-24 {
-  top: 6rem;
-}
-
-.top-12 {
-  top: 3rem;
+.-z-10 {
+  z-index: -10;
 }
 
 .z-10 {
@@ -1002,26 +990,8 @@ video {
   border-radius: 0.75rem;
 }
 
-.border {
-  border-width: 1px;
-}
-
-.border-2 {
-  border-width: 2px;
-}
-
 .border-b-2 {
   border-bottom-width: 2px;
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.border-blue-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(37 99 235 / var(--tw-border-opacity));
 }
 
 .border-b-white {
@@ -1029,14 +999,14 @@ video {
   border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-\[\#544eda\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(84 78 218 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#8c2517\] {
   --tw-bg-opacity: 1;
   background-color: rgb(140 37 23 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#cddcdc\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(205 220 220 / var(--tw-bg-opacity));
 }
 
 .bg-gray-300 {
@@ -1048,12 +1018,12 @@ video {
   background-color: transparent;
 }
 
-.bg-\[url\(\'\.\.\/src\/Images\/portfolio\.png\'\)\] {
-  background-image: url('../src/Images/portfolio.png');
+.bg-\[url\(\'\.\.\/src\/Images\/copsclone\.png\'\)\] {
+  background-image: url('../src/Images/copsclone.png');
 }
 
-.bg-\[url\(\'\.\.\/src\/Images\/textutils\.png\'\)\] {
-  background-image: url('../src/Images/textutils.png');
+.bg-\[url\(\'\.\.\/src\/Images\/portfolio\.png\'\)\] {
+  background-image: url('../src/Images/portfolio.png');
 }
 
 .bg-\[url\(\'\.\.\/src\/Images\/todo\.png\'\)\] {
@@ -1132,10 +1102,6 @@ video {
   font-weight: 700;
 }
 
-.lowercase {
-  text-transform: lowercase;
-}
-
 .text-\[\#f6ba74\] {
   --tw-text-opacity: 1;
   color: rgb(246 186 116 / var(--tw-text-opacity));
@@ -1186,6 +1152,10 @@ video {
 
 .opacity-30 {
   opacity: 0.3;
+}
+
+.opacity-40 {
+  opacity: 0.4;
 }
 
 .opacity-50 {
