@@ -1,6 +1,6 @@
 const client_id = '31ab7bd2d0c2473c93d8c54fec334da5';
 const userId = '313apiitplczopvlclvusxbntoha'
-// const redirect_uri = 'http://127.0.0.1:5501/dist/Spotify.html';
+// const redirect_uri = 'http://127.0.0.1:5500/dist/Spotify.html';
 const redirect_uri = 'https://varun-kolanu-portfolio-csoc.netlify.app/dist/Spotify.html';
 let myName = "";
 let noOfPlaylists = 0;
@@ -38,7 +38,22 @@ let alternatePlaylists = {
         }
     ]
 }
+let alternateProfile = {
+    "display_name": "Varun_Kolanu",
+    "external_urls": {
+        "spotify": "https://open.spotify.com/user/313apiitplczopvlclvusxbntoha"
+    },
+    "followers": {
+        "total": 2
+    },
+    "images": [
+        {
+            "url": "https://i.scdn.co/image/ab6775700000ee85843f9b40d35856a81bf443db"
+        }
+    ]
+}
 let playlists = {}
+let profile = {}
 
 const profileImageDom = document.getElementById("profileImage")
 const myNameDom = document.getElementById("myName")
@@ -107,17 +122,24 @@ const userProfile = async () => {
     }
     if (response.status === 200) {
         const responseJson = await response.json();
-        myName = responseJson.display_name;
-        followers = responseJson.followers.total
-        openProfileUrl = responseJson.external_urls.spotify
-        profileImgUrl = responseJson.images[0].url
-
-        myNameDom.innerText = myName
-        followersDom.innerText = followers + ' ' + "followers"
-        openProfileDom.href = openProfileUrl
-        profileImageDom.style = `background-image: url('${profileImgUrl}');`
+        profile = responseJson
     }
+    else if (response.status === 403) {
+        //* Developer not registered in the dashboard
+        profile = alternateProfile
+    }
+    myName = profile.display_name;
+    followers = profile.followers.total
+    openProfileUrl = profile.external_urls.spotify
+    profileImgUrl = profile.images[0].url
+
+    myNameDom.innerText = myName
+    followersDom.innerText = followers + ' ' + "followers"
+    openProfileDom.href = openProfileUrl
+    profileImageDom.style = `background-image: url('${profileImgUrl}');`
+    console.log(profile)
 }
+
 
 const myPlaylists = async () => {
     let response = await fetch(`https://api.spotify.com/v1/users/${userId}/playlists`, {
@@ -143,7 +165,7 @@ const myPlaylists = async () => {
         //* User Not registered in the developer dashboard
         playlists = alternatePlaylists;
     }
-    
+
     noOfPlaylists = playlists.items.length
     noOfPlaylistsDom.innerText = noOfPlaylists + ' ' + 'Public Playlists';
 
