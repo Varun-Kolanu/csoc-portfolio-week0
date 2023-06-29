@@ -1,7 +1,7 @@
 const client_id = '31ab7bd2d0c2473c93d8c54fec334da5';
 const userId = '313apiitplczopvlclvusxbntoha'
 // const redirect_uri = 'http://127.0.0.1:5501/dist/Spotify.html';
-const redirect_uri = 'https://varun-kolanu-portfolio-csoc.netlify.app/dist/spotify';
+const redirect_uri = 'https://varun-kolanu-portfolio-csoc.netlify.app/dist/Spotify.html';
 let myName = "";
 let noOfPlaylists = 0;
 let followers = 0;
