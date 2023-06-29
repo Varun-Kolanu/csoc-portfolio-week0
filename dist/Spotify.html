@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../src/favicon/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio - Spotify Profile</title>
+</head>
+
+<body>
+    <div class="flex flex-col justify-between w-[100vw] h-[100vh] bg-gradient-radial from-[#8696FE] to-[#4942E4]">
+        <a href="./index.html" class="absolute top-5 left-10 text-white flex justify-between items-center">
+            Home <i class="w-4 h-4 ml-2 fa fa-home"></i>
+        </a>
+        <nav class="flex w-[100vw] justify-center">
+            <ul class="flex justify-evenly w-[40rem] absolute font-mono top-4 text-white text-xl">
+                <a href="./AboutMe.html">
+                    <li
+                        class="hover:underline hover:underline-offset-4 hover:text-orange-300 cursor-pointer transition-all duration-500  ">
+                        About Me</li>
+                </a>
+                <a href="./Skills.html">
+                    <li
+                        class="hover:underline hover:underline-offset-4 hover:text-orange-300 cursor-pointer transition-all duration-500">
+                        Skills</li>
+                </a>
+                <a href="./Projects.html">
+                    <li
+                        class="hover:underline hover:underline-offset-4 hover:text-orange-300 cursor-pointer transition-all duration-500">
+                        Projects</li>
+                </a>
+                <a href="./Contact.html">
+                    <li class="hover:underline hover:underline-offset-4 hover:text-orange-300 cursor-pointer transition-all duration-500">
+                        Contact Me</li>
+                </a>
+                <a href="./Spotify.html">
+                    <li class="text-red-300 underline underline-offset-4 font-bold">
+                        Spotify</li>
+                </a>
+            </ul>
+        </nav>
+        <div id="spotifyProfileBox" class="w-[1000px] relative mx-auto h-[90%] flex flex-col">
+            <h1 class="text-5xl font-serif text-[#f6ba74]">
+                Spotify Profile
+                <i class="fa fa-spotify text-5xl text-[#22ff72]"></i>
+            </h1>
+            <div class="h-full">
+                <div id="profile" class="w-[900px] mt-5 ml-4 h-[250px] flex">
+                    <div id="profileImage" class="shadow-black hover:scale-105 transition-all duration-500 cursor-pointer shadow-xl w-[220px] h-[220px] mt-3 rounded-[50%] bg-center bg-cover"></div>
+                    <div id="profileText" class="w-[60%] flex flex-col justify-end mb-9 ml-3 text-white">
+                        <span>Profile</span>
+                        <span class="text-8xl font-bold" id="myName"></span>
+                        <ul class="flex list-disc mt-3">
+                            <li class="ml-7" id="noOfPlaylists"></li>
+                            <li class="ml-7" id="followers"></li>
+                            <a href="" target="_blank" id="openProfile"> <li class="ml-7 underline">Open Profile</li> </a>
+                        </ul>
+                    </div>
+                </div>
+                <div id="playlists">
+                    <h2 class="font-mono text-3xl text-[#f6ba74]">My Playlists</h2>
+                    <div id="playlistCards" class="flex">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../src/spotify.js"></script>
+
+</body>
+
+</html>

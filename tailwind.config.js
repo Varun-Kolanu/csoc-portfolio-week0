@@ -35,4 +35,17 @@ export const theme = {
     }
   }
 };
+
+export const safelist = [
+  'bg-[#4d51bc]',
+  'drop-shadow-2xl',
+  'text-[#22ff72]',
+  'hover:scale-105',
+  'cursor-pointer',
+  'w-[170px]',
+  'h-[170px]',
+  'm-3',
+  'w-[200px]',
+  'h-[250px]'
+]
 export const plugins = [rotateX];
